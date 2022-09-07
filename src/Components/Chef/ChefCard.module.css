@@ -1,0 +1,38 @@
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+    height:30%;
+    margin:2rem 0;
+}
+.imgwrapper {
+    max-width:300px;
+}
+.imgwrapper img {
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    border:1rem solid black;
+}
+.name {
+    font-size:2rem;
+}
+.position {
+    font-size:1.8rem;
+    color:rgb(254, 186, 28);
+}
+.sociallist {
+    display:flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.socialitem {
+    font-size:3.7rem;
+    color:black;
+    margin:0 2rem;
+    transition:color 300ms;
+}
+.socialitem:hover {
+    color:rgb(254, 186, 28);
+}

@@ -1,0 +1,133 @@
+.card {
+    height:30%;
+    width:90%;
+    max-width:880px;
+    background:white;
+    padding:3%;
+    margin: auto;
+    border-radius:1rem;
+    text-align:center;
+    box-shadow:.2rem .2rem 2rem black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+.card-text {
+    height:40%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.card-text h2 {
+    font-size:1.8rem;
+    color:black;
+    text-transform: uppercase;
+    position:relative;
+    text-align:center;
+    display:inline;
+    padding:.5rem;
+    margin:.4rem;
+}
+.card-text p {
+    margin:.2rem 0;
+    font-size:1.5rem;
+}
+.card-text h3  {
+    font-size:1rem;
+    margin:.2rem 0;
+    padding:0;
+}
+
+
+.card-text h2::after {
+    content:"";
+    width:45%;
+    height:.4rem;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background:rgb(254, 186, 28);
+}
+.extra {
+    display:none;
+}
+.img-container {
+    width:100%;
+    height:50%;
+}
+
+.img-wrapper {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.img-wrapper img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition: transform 300ms ease-in;
+}
+.img-wrapper img:hover {
+    transform:scale(1.5);
+}
+.card-text > div {
+    height:13%;
+    margin:1rem 0;
+    position:absolute;
+    top:3%;
+    right:6%;
+}
+.card-text img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+
+@media (min-width:700px) {
+    .card {
+        flex-direction:row;
+        width:75%;
+        height:400px;
+        padding:0%;
+        justify-content:space-between;
+        align-items: center;
+
+    }
+    .card-text {
+        order:4;
+        width:40%;
+    }
+    .img-container {
+        width:60%;
+        height:100%;
+        display:flex;
+        align-items:stretch;
+    }
+    .img-wrapper {
+        width:50%;
+        height:100%;
+        border:.7rem solid rgb(254, 186, 28);
+        border-top-left-radius:1rem;
+        border-bottom-left-radius:1rem;
+    }
+    .extra {
+        display:block;
+        border-left:none;
+        border-top-left-radius:0rem;
+        border-bottom-left-radius:0rem;
+    }
+    .extra img {
+        object-position:right;
+    }
+    .card-text > div {
+        position:static;
+        height:40%;
+        margin:1.5rem;
+    }
+} 

@@ -1,0 +1,42 @@
+.hero-wrapper {
+    height:155vh;
+    position:relative;
+    background: linear-gradient(to top, rgba(16, 14, 38, 0.113), rgba(16, 14, 38, 0.288)), no-repeat top/ cover url('../../../images/Backgrounds/Hero1.jpg');
+}
+.heading {
+    height:66.6%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.heading-wrapper {
+    opacity:0;
+    animation: headingDrop 500ms 500ms forwards;
+}
+.title1 {
+    font-size:3rem;
+    color: white;
+    font-style:italic;
+    letter-spacing:.3rem;
+    font-weight:300;
+}
+.title2 {
+    font-size:4rem;
+    color:rgb(254, 186, 28);
+    font-style:italic;
+    font-weight:300;
+}
+
+@keyframes headingDrop {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
