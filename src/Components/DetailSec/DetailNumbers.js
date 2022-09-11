@@ -3,8 +3,8 @@ import styles from "./DetailNumber.module.css";
 import DetailItem from "./DetailItem.js";
 export default function DetailNumbers() {
   return (
-    <section className={styles.container}>
-      <div className={styles.textwrapper}>
+    <section className={`${styles.container} animate`}>
+      <div className={styles['text-wrapper']}>
       <p className={styles["container-heading"]}>
         lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
         elementum dui, sed dignissim lectus. Donec porttitor, metus sed iaculis

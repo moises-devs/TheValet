@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const MenuContext = React.createContext({});
+export const MenuContext = React.createContext({});
 
 
 export default function MenuContextProvider({children}) {
@@ -43,7 +43,6 @@ export default function MenuContextProvider({children}) {
             }
             return meal;
           });
-          console.log(updatedMeals);
           setMeals(updatedMeals);
           setOriginalMeals(updatedMeals);
           setIsLoading(false);

@@ -18,13 +18,14 @@
     height:100%;
     outline:none;
     background:none;
-    font-size:3rem;
+    font-size:2rem;
     margin: 5%;
     color:white;
     border:none;
     display:flex;
     flex-direction:column;
     align-items: center;
+    cursor:pointer;
 }
 .itembtn svg {
     pointer-events: none
@@ -33,7 +34,7 @@
     pointer-events: none
 }
 .title {
-    font-size:50%;
+    font-size:2rem;
     padding:0;
     margin:0;
 }
@@ -52,16 +53,26 @@
     color:rgb(254, 186, 28);
 }
 
-/* .item:hover .itembtn {
-    color:rgb(254, 186, 28);
-    border:.5rem solid gainsboro;
-    border-bottom:none;
-    border-top-left-radius: 50%;
-    border-top-right-radius:50%;
-} */
+@media (min-width:700px) {
+    .itembtn, .title {
+        font-size:2.5rem;
+    }
+    
+}
 
-@media (min-width:600px) {
-    .itembtn {
+@media (min-width:1000px) {
+    .itembtn, .title  {
+        font-size:3rem;
+    }
+}
+
+@media (min-width:1500px) {
+    .itembtn, .title {
         font-size:4rem;
+    }
+}
+@media (min-width:2000px) { 
+    .itembtn, .title  {
+        font-size:5.2rem;
     }
 }

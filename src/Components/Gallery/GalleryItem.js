@@ -1,8 +1,19 @@
-import React from 'react'
+import React, {useContext, useState} from 'react'
 import styles from "./GalleryItem.module.css";
+import Modal from '../UI/Modal';
+import { ModalContext } from '../../Context/ModalContext';
 export default function GalleryItem(props) {
-  return (
-    <li className={styles['gallery-item']}>
+  const [displayImg, setDisplayImg] = useState(false);
+  const {showModal, toggleModal} = useContext(ModalContext);
+  function modalHandler(e) {
+    setDisplayImg(prevState => !prevState);
+    toggleModal();
+  }
+  function toggleDisplay() {
+    setDisplayImg(prevState => !prevState);
+  }
+  return ( <>
+    <li  id={props.id} onClick={modalHandler} className={styles['gallery-item']}>
         <figure className={styles['img-wrapper']}>
             <img src={props.src} alt="" />
             <figcaption>
@@ -10,5 +21,7 @@ export default function GalleryItem(props) {
             </figcaption>
         </figure>
     </li>
+    {showModal && displayImg && <Modal src={props.src} caption={props.caption} clearImg={toggleDisplay}/>}
+    </>
   )
 }

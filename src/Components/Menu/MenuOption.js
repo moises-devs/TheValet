@@ -11,7 +11,6 @@ function MenuOption(props) {
     setActiveItem(e.target.id);
     props.filterMeals(e.target.id);
   }
-  console.log(activeItem);
   return (
     <ul className={styles.itemwrapper} >
       <li onClick={filterHandler} className={styles.item}>

@@ -1,19 +1,58 @@
-.hero-wrapper {
-    height:155vh;
-    position:relative;
-    background: linear-gradient(to top, rgba(16, 14, 38, 0.113), rgba(16, 14, 38, 0.288)), no-repeat top/ cover url('../../../images/Backgrounds/Hero1.jpg');
-}
-.heading {
-    height:66.6%;
-    text-align:center;
+.intro-wrapper {
+    background:black;
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:20;
     display:flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    text-align:center;
+}
+.texthide {
+    background:black;
+    overflow:hidden;
+}
+.texthide span{
+    transform:translateY(100%);
+    display:inline-block;
+    font-size:7rem;
+    font-family: 'Francois One', sans-serif;
+}
+.textw {
+    color:white;
+}
+.texty {
+    color:rgb(254,186,28);
+}
+
+.slider {
+    width:100%;
+    height:100%;
+    transform:translateY(100%);
+    position:fixed;
+    z-index:21;
+    background:rgb(254,186,28);
+}
+
+.hero-wrapper {
+    height:100%;
+    position:relative;
+    padding:5%;
+    background: linear-gradient(to top, rgba(16, 14, 38, 0.113), rgba(16, 14, 38, 0.288)), no-repeat top/ cover url('../../../images/Backgrounds/Hero1.jpg');
+}
+.heading {
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:8rem;
+    opacity:0;
 }
 .heading-wrapper {
-    opacity:0;
-    animation: headingDrop 500ms 500ms forwards;
+    opacity:1;
 }
 .title1 {
     font-size:3rem;
@@ -23,20 +62,56 @@
     font-weight:300;
 }
 .title2 {
-    font-size:4rem;
+    font-size:7rem;
     color:rgb(254, 186, 28);
     font-style:italic;
-    font-weight:300;
+    font-weight:500;
+    margin: 1rem 0;
 }
 
-@keyframes headingDrop {
-    0% {
-        opacity:0;
+@media (min-width:600px) {
+    .title1 {
+        font-size:4rem;
     }
-    50% {
-        opacity:0.5;
+    .title2 {
+        font-size:7.5rem;
     }
-    100% {
-        opacity:1;
+    .texthide span{
+        font-size:9rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .title1 {
+        font-size:4.5rem;
+    }
+    .title2 {
+        font-size:8rem;
+    }
+    .texthide span{
+        font-size:10rem;
+    }
+}
+@media (min-width:1500px) {
+    .title1 {
+        font-size:5rem;
+    }
+    .title2 {
+        font-size:9rem;
+    }
+    .texthide span{
+        font-size:12rem;
+    }
+}
+
+@media (min-width:2000px) {
+    .title1 {
+        font-size:6rem;
+    }
+    .title2 {
+        font-size:10rem;
+    }
+    .texthide span{
+        font-size:14rem;
     }
 }

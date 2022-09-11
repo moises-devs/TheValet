@@ -1,15 +1,23 @@
 .gallery-item {
-    margin: 0;
-    padding:0;
-    max-width:500px;
+    display:block;
+
+}
+.gallery-item:hover {
+    cursor:pointer;
 }
 .img-wrapper {
     position:relative;
+    /* width:50%; */
+    max-width:400px;
+    margin: 0 auto;
+    pointer-events: none;
 }
+
 .img-wrapper img {
     height:100%;
     width:100%;
     object-fit:cover;
+    pointer-events: none
 }
 .img-wrapper figcaption {
     position:absolute;
@@ -27,6 +35,7 @@
     font-weight:600;
     color:black;
     box-shadow:1px 1px 4rem white;
+    pointer-events: none
 }
 .gallery-item:hover .img-wrapper figcaption{
     opacity:.8;

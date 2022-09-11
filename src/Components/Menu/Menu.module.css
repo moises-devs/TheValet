@@ -17,7 +17,10 @@
     box-shadow:.2rem .2rem 2rem black;
     width:80%;
     height:90%;
-    max-width:1500px;
+    max-width:1700px;
+    position:relative;
+    opacity:0;
+    transform:translateY(150px);
 
 }
 
@@ -31,4 +34,28 @@
 .options {
     width:80%;
     margin: 1rem auto;
+}
+
+@media (min-width:700px) {
+    .title {
+        font-size:4.5rem;
+    }
+    
+}
+
+@media (min-width:1000px) {
+    .title {
+        font-size:4.8rem;
+    }
+}
+
+@media (min-width:1500px) {
+    .title {
+        font-size:5rem;
+    }
+}
+@media (min-width:2000px) { 
+    .title {
+        font-size:5.2rem;
+    }
 }

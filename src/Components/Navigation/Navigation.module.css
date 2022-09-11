@@ -1,6 +1,7 @@
 /* navigation */
 body {
-    background:rgb(254, 186, 28);
+    background:white;
+    /*rgb(255,242,218 */
 }
 nav {
     padding:1% 5%;
@@ -11,15 +12,17 @@ nav {
     align-items:center;
     position:fixed;
     width:100vw;
-    z-index:10;
+    z-index:20;
+    opacity:0;
+    transform:translateY(-100%);
 }
-.navlink > a {
+.nav-link > a {
     color:white;
     font-size:1.8rem;
     position:relative;
     padding-bottom:.4rem;
 }
-.navlink > a::before {
+.nav-link > a::before {
     content: "";
     width:0;
     height:.2rem;
@@ -28,9 +31,9 @@ nav {
     bottom:0;
     transition: all .3s ease-in;
 }
-.navlink > a:hover::before {
+.nav-link > a:hover::before {
     width:100%;
-    color:orange;
+    color:rgb(254,186,28);
     right:0;
 }
 .links-container {
@@ -57,14 +60,14 @@ nav {
     position:absolute;
     top:0;
     left:0;
-    height:50vh;
+    height:40vh;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: space-around;
     
 }
-.closeIcon {
+.close-icon {
     position:absolute;
     background:transparent;
     top:5%;
@@ -86,6 +89,29 @@ nav {
     .link-wrapper.active {
         display:none;
     }
+    .nav-link a {
+        font-size:2rem;
+    }
 }
+
+@media (min-width:1000px) {
+    .nav-link a {
+        font-size:2.1rem;
+    }
+} 
+
+@media (min-width:1500px) {
+    .nav-link a {
+        font-size:2.3rem;
+    }
+}
+
+@media (min-width:2000px) {
+    .nav-link a {
+        font-size:2.5rem;
+    }
+}
+
+
 
 /* end of navigation */

@@ -8,7 +8,7 @@ import chef3 from "../../images/Avatar/image.jpg";
 export default function Chef() {
   return (
     <SectionCard title={"Our Cheff"} subtitle={"Meet"}>
-      <div className={styles.imgwrapper}>
+      <div className={`${styles['img-wrapper']} animate`}>
         <ChefCard
           name={"John Dogget"}
           position={"Head Chef"}

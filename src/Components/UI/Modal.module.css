@@ -1,0 +1,45 @@
+.modal {
+    background:rgba(0, 0, 0, 0.491);
+    position:fixed;
+    z-index:5;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.img-wrapper {
+    width:80%;
+    max-width:650px;
+    position:relative;
+}
+.img-wrapper img {
+    height:100%;
+    width:100%;
+}
+
+.btn {
+    top:4%;
+    right:2%;
+    position:absolute;
+    background:none;
+    border:none;
+    font-size:4rem;
+    background:transparent;
+}
+.btn:hover {
+    cursor:pointer;
+}
+.icon {
+    color:white;
+    transition:color 300ms;
+    padding:0;
+    margin:0;
+}
+.icon:hover {
+    color:rgb(254, 186, 28);
+}

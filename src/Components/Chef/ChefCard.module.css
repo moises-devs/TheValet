@@ -6,10 +6,10 @@
     height:30%;
     margin:2rem 0;
 }
-.imgwrapper {
+.img-wrapper {
     max-width:300px;
 }
-.imgwrapper img {
+.img-wrapper img {
     height:100%;
     width:100%;
     border-radius:50%;
@@ -22,17 +22,33 @@
     font-size:1.8rem;
     color:rgb(254, 186, 28);
 }
-.sociallist {
+.social-list {
     display:flex;
     justify-content: space-around;
     margin: 0 auto;
 }
-.socialitem {
+.social-item {
     font-size:3.7rem;
     color:black;
     margin:0 2rem;
     transition:color 300ms;
 }
-.socialitem:hover {
+.social-item:hover {
     color:rgb(254, 186, 28);
+}
+@media (min-width:700px) {
+    .name, .description {
+        font-size:2.2rem;
+    }
+    .social-item {
+        font-size:3.8rem;
+    }
+}
+@media (min-width:1000px) {
+    .name, .description {
+        font-size:2.5rem;
+    }
+    .social-item {
+        font-size:4rem;
+    }
 }

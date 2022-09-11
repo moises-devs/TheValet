@@ -4,6 +4,29 @@
     align-items: center;
 
 }
-.amount {
-    font-size:3rem;
+.amount, .title {
+    font-size:1.8rem;
+}
+
+@media (min-width:700px) {
+    .amount, .title{
+        font-size:1.8rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .amount, .title {
+        font-size:2.3rem;
+    }
+}
+
+@media (min-width:1500px) {
+    .amount, .title {
+        font-size:2.8rem;
+    }
+}
+@media (min-width:2000px) { 
+    .amount, .title {
+        font-size:3.4rem;
+    }
 }

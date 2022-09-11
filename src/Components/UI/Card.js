@@ -1,8 +1,8 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import styles from "./Card.module.css";
-export default function Card(props) {
+export default forwardRef(function Card(props, ref) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} ref={ref}>
       <div className={styles["card-text"]}>{props.children}</div>
       <div className={styles["img-container"]}>
         <div className={styles["img-wrapper"]}>
@@ -14,4 +14,4 @@ export default function Card(props) {
       </div>
     </div>
   );
-}
+});

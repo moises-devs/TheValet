@@ -1,26 +1,18 @@
-.gallery-wrapper {
+.reserve-wrapper{
     display:flex;
     flex-direction:column;
     align-items:center;
     width:100%;
+    max-width:1550px;
     position:relative;
     opacity:0;
     transform:translateY(150px);
 }
 
-@media (min-width:750px) {
-    .gallery-wrapper {
+@media (min-width:700px) {
+    .reserve-wrapper {
         flex-direction:row;
-        align-items: flex-start;
-        justify-content: center;
         flex-wrap:wrap;
-    }
-}
-
-@media (min-width:1500px) {
-    .gallery-wrapper {
-        align-items: center;
         justify-content: center;
-        flex-wrap:wrap;
     }
 }

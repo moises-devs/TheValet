@@ -1,0 +1,35 @@
+.wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:5%;
+    width:100%;
+    height:100%;
+}
+
+.img-wrapper {
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    border:.2rem solid black;
+    overflow: hidden;
+}
+.img-wrapper img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
+.name {
+    color: rgb(137, 106, 34);
+}
+
+.quote {
+    color:rgb(137, 106, 34);
+}
+
+@media (min-width:600px) {
+    .name, .quote {
+        font-size:2rem;
+    }
+}

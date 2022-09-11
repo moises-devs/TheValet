@@ -1,16 +1,20 @@
-.containerBg {
+.container-Bg {
     width:100%;
     background:url('../../images/Backgrounds/background.jpg') no-repeat center/ cover;
+    
 }
-.bookingWrapper {
+.booking-Wrapper {
     display:flex;
     flex-direction:column;
     align-items: center;
     padding:4%;
-    max-width:1500px;
+    max-width:1700px;
     margin: 0 auto;
+    position:relative;
+    opacity:0;
+    transform:translateY(150px);
 }
-.scheduleWrapper {
+.schedule-Wrapper {
     color:white;
     text-align:center;
     border:.2rem dashed rgb(254, 186, 28);
@@ -20,12 +24,12 @@
     margin:3% 5%;
 }
 
-.topHeading {
+.top-Heading {
     color:rgb(254, 186, 28);
     font-size:3rem;
     font-style:italic;
 }
-.topHeadingDetail {
+.top-Heading-Detail {
     color:white;
     text-transform: uppercase;
     font-size:3rem;
@@ -33,7 +37,7 @@
     position:relative;
     padding-bottom:1rem;
 }
-.topHeadingDetail::after {
+.top-Heading-Detail::after {
     content:"";
     width:50%;
     height:.4rem;
@@ -42,16 +46,20 @@
     bottom:0;
     left:25%;
 }
-.detailSection {
+.detail-Section {
     margin:1rem 0;
 }
-.brightHeading {
+.bright-Heading {
     color:rgb(254, 186, 28);
+    font-size:1.8rem;
 }
-.largeHeading {
+.details {
+    font-size:1.5rem;
+}
+.large-Heading {
     font-size:3rem;
 }
-.formwrapper{
+.form-wrapper{
     display:flex;
     flex-direction:column;
     width:100%;
@@ -75,10 +83,69 @@
     background:black;
 }
 
-@media(min-width:1300px) {
-    .bookingWrapper {
+@media (min-width:700px) {
+    .top-Heading {
+        font-size:3.3rem;
+    }
+    .top-Heading-Detail {
+        font-size:3.3rem;
+    }
+    .bright-Heading {
+        font-size:2rem;
+    }
+    .details {
+        font-size:1.8rem;
+    }
+    .large-Heading {
+        font-size:3.3rem;
+    }
+}
+
+@media(min-width:1000px) {
+    .booking-Wrapper {
         flex-direction:row;
         justify-content: space-between;
+    }    
+    .top-Heading {
+        font-size:3.4rem;
+    }
+    .top-Heading-Detail {
+        font-size:3.4rem;
+    }
+    .bright-Heading {
+        font-size:2rem;
+    }
+    .details {
+        font-size:2rem;
+    }
+    .large-Heading {
+        font-size:3.4rem;
+    }
+    
+}
+
+@media(min-width:1300px) {
+    .booking-Wrapper {
+        flex-direction:row;
+        justify-content: space-between;
+    } 
+}
+
+@media (min-width:1500px) {
+    .top-Heading {
+        font-size:3.5rem;
+    }
+    .top-Heading-Detail {
+        font-size:3.5rem;
+    }
+    .bright-Heading {
+        font-size:2.1rem;
+    }
+    .details {
+        font-size:2.1rem;
+    }
+    .large-Heading {
+        font-size:3.5rem;
     }
     
 }

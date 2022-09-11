@@ -4,15 +4,15 @@ import SectionCard from '../UI/SectionCard';
 import Input from '../UI/Input';
 export default function Booking() {
   return (
-    <div className={styles.containerBg} id={'reservation'}>
-        <div className={styles.bookingWrapper}>
-            <div className={styles.scheduleWrapper}>
-                <div className={styles.headingWrapper}>
-                <h2 className={styles.topHeading}>Time</h2>
-                <p className={styles.topHeadingDetail}>Open</p>
+    <div className={styles['container-Bg']} id={'reservation'}>
+        <div className={`${styles['booking-Wrapper']} animate`}>
+            <div className={styles['schedule-Wrapper']}>
+                <div className={styles['heading-Wrapper']}>
+                <h2 className={styles['top-Heading']}>Time</h2>
+                <p className={styles['top-Heading-Detail']}>Open</p>
                 </div>
-                <div className={styles.detailSection}>
-                    <p className={styles.brightHeading}>
+                <div className={styles['detail-Section']}>
+                    <p className={styles['bright-Heading']}>
                         Monday-Friday
                     </p>
                     <p className={styles.detail}>
@@ -22,8 +22,8 @@ export default function Booking() {
                     11AM - 10PM (Lunch/Dinner)
                     </p>
                 </div>
-                <div className={styles.detailSection}>
-                    <p className={styles.brightHeading}>
+                <div className={styles['detail-Section']}>
+                    <p className={styles['bright-Heading']}>
                     SATURDAY / SUNDAY
                     </p>
                     <p className={styles.detail}>
@@ -33,12 +33,12 @@ export default function Booking() {
                     1PM - 9PM (Lunch/Dinner)
                     </p>
                 </div>
-                <p className={`${styles.brightHeading} ${styles.largeHeading}`}>
+                <p className={`${styles['bright-Heading']} ${styles['large-Heading']}`}>
                         323-569-3256
                 </p>
             </div>
-            <SectionCard title={'Online Booking'} subtitle={'Reservation'} transparent={true} >
-                <form className={styles.formwrapper}>
+            <SectionCard title={'Online Booking'} subtitle={'Reservation'} transparent={false} >
+                <form className={styles['form-wrapper']}>
                     <Input type={'text'} id={'name'} placeholder={'Your Name*'} required={true} />
                     <Input type={'email'} id={'email'} placeholder={'Your Email*'} required={true} />
                     <Input type={'Mobile Number'}  id={'number'} placeholder={'Mobile Number *'} required={true} />
