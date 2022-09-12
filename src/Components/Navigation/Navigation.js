@@ -4,6 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
+import Logo from "../../images/Backgrounds/—Pngtree—chef pig cartoon cute_6839717.png"
 import gsap from "gsap";
 export default function Navigation() {
   const navRef = useRef();
@@ -49,7 +50,7 @@ export default function Navigation() {
   );
   return (
     <nav ref={navRef}>
-      <p> logo here </p>
+      <div className={styles.logo}> <img src={Logo} alt="chef logo"/> </div>
       <ul className={styles["links-container"]}>{linkList}</ul>
       <GiHamburgerMenu onClick={displayMenuHandler} className={styles.burger} />
       {showMenu && (
