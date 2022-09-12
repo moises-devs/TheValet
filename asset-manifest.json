@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/TheValet/static/css/main.f0c460b1.css",
+    "main.js": "/TheValet/static/js/main.866bc226.js",
+    "static/media/Hero1.jpg": "/TheValet/static/media/Hero1.afc7e4768187320b5236.jpg",
+    "static/media/storyimg1.jpg": "/TheValet/static/media/storyimg1.420d372211f0af4ff061.jpg",
+    "static/media/storyimg0.jpg": "/TheValet/static/media/storyimg0.cb4e3b2079a58c05b2da.jpg",
+    "static/media/Hero2.jpg": "/TheValet/static/media/Hero2.6cc7ff11d2bf52ff3dbf.jpg",
+    "static/media/reservation.jpg": "/TheValet/static/media/reservation.67fa6dc1598db60ba138.jpg",
+    "static/media/background.jpg": "/TheValet/static/media/background.b0d00d1f3e9c08d4bece.jpg",
+    "static/media/avatar-jpg": "/TheValet/static/media/avatar-86a790138d6f5bb8893cb9238eb21ae9.6ffca4b9f2d888bb7f7e.jpg",
+    "static/media/image-2.jpg": "/TheValet/static/media/image-2.8395a2d6e2f079af13ee.jpg",
+    "static/media/image-1.jpg": "/TheValet/static/media/image-1.d343a4e4dfcfb25461bf.jpg",
+    "static/media/fakeperson.jpg": "/TheValet/static/media/fakeperson.51ae461ae5ba5b52cbe0.jpg",
+    "static/media/image.jpg": "/TheValet/static/media/image.6557c076c9a7bcacc15c.jpg",
+    "static/media/Winonas-hemp.jpg": "/TheValet/static/media/Winonas-hemp.5d9b6add9b3734e400e2.jpg",
+    "static/media/—Pngtree—chef pig cartoon cute_6839717.png": "/TheValet/static/media/—Pngtree—chef pig cartoon cute_6839717.5fb10858ce6045c22689.png",
+    "static/media/Jose_Andres_Puerta_2012_Shankbone.jpg": "/TheValet/static/media/Jose_Andres_Puerta_2012_Shankbone.e321ee8cab3fc93fe1d2.jpg",
+    "static/media/thomas-1000x697.jpg": "/TheValet/static/media/thomas-1000x697.8efa49da731186d2e646.jpg",
+    "static/media/pexels-photo-64208.jpg": "/TheValet/static/media/pexels-photo-64208.ae73a9040f697378272a.jpg",
+    "index.html": "/TheValet/index.html",
+    "main.f0c460b1.css.map": "/TheValet/static/css/main.f0c460b1.css.map",
+    "main.866bc226.js.map": "/TheValet/static/js/main.866bc226.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0c460b1.css",
+    "static/js/main.866bc226.js"
+  ]
+}
