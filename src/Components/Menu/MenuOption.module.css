@@ -11,15 +11,15 @@
     height:100%;
     margin:0;
     padding:0;
-    margin-right:5%;
+    margin-right:3%;
 }
 
 .itembtn {
     height:100%;
     outline:none;
     background:none;
-    font-size:2rem;
-    margin: 5%;
+    font-size:1.8rem;
+    margin: 3%;
     color:white;
     border:none;
     display:flex;

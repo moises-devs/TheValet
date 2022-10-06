@@ -1,6 +1,5 @@
 *{
   box-sizing:border-box;
-  outline:.1rem solid red;
 }
 
 html {
@@ -30,6 +29,7 @@ body {
   height:100%;
   font-family: 'Francois One', sans-serif;
   font-family: 'Gayathri', sans-serif;
+
 }
 p {
   font-family:'Gayathri', sans-serif;
