@@ -17,7 +17,7 @@ export default function DetailNumbers() {
           src={"https://cdn.lordicon.com/cjyxqyly.json"}
           amount={1550}
           icon={"icon here"}
-          trigger={"hover"}
+          trigger={"loop"}
           colors={"primary:#c67d53,secondary:#feba1c,tertiary:#f4c89c"}
           width={'100px'}
           height={'80px'}
@@ -27,7 +27,7 @@ export default function DetailNumbers() {
           amount={125}
           icon={"icon here"}
           src={"https://cdn.lordicon.com/ibzzbohe.json"}
-          trigger={"hover"}
+          trigger={"loop"}
           colors={"outline:#121331,primary:#646e78,tertiary:#ee6d66"}
           width={'100px'}
           height={'80px'}
@@ -37,7 +37,7 @@ export default function DetailNumbers() {
           amount={35}
           icon={"icon here"}
           src={"https://cdn.lordicon.com/pmpgqwuc.json"}
-          trigger={"hover"}
+          trigger={"loop"}
           colors={"outline:#121331,primary:#d59f80,secondary:#feba1c,tertiary:#242424,quaternary:#e8e230,quinary:#a660"}
           width={'100px'}
           height={'80px'}
@@ -47,7 +47,7 @@ export default function DetailNumbers() {
           amount={18}
           icon={"icon here"}
           src={"https://cdn.lordicon.com/okyfhqcr.json"}
-          trigger={"hover"}
+          trigger={"loop"}
           colors={"primary:#3a3347,secondary:#feba1c,tertiary:#5c0e0a,quaternary:#f9c9c0"}
           width={'100px'}
           height={'80px'}

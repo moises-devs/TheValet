@@ -7,9 +7,7 @@ export default function Modal(props) {
     e.stopPropagation();
     props.clearImg();
     toggleModal();
-    console.log('button pressed');
   }
-  console.log('re-rendering');
   const { toggleModal } = useContext(ModalContext);
   return (
     <div className={styles.modal} onClick={closeModalHandler}>

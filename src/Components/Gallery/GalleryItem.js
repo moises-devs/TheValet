@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import styles from "./GalleryItem.module.css";
 import Modal from '../UI/Modal';
 import { ModalContext } from '../../Context/ModalContext';
@@ -12,6 +12,15 @@ export default function GalleryItem(props) {
   function toggleDisplay() {
     setDisplayImg(prevState => !prevState);
   }
+  useEffect(() => {
+    if (showModal) {
+      document.querySelector('body').style.overflow = 'hidden';
+    }
+    else {
+      document.querySelector('body').style.overflow = 'visible';
+    }
+
+  },[displayImg, showModal])
   return ( <>
     <li  id={props.id} onClick={modalHandler} className={styles['gallery-item']}>
         <figure className={styles['img-wrapper']}>

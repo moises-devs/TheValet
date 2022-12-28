@@ -6,7 +6,7 @@ import fakePerson from "../../images/Avatar/fakeperson.jpg";
 export default function DailySpecial() {
   return (
     <SectionCard title={'Daily Special'} subtitle={'Discover'}>
-      <div className={`${styles['section-wrapper']} animate`}>
+      <div className={`${styles['section-wrapper']}`}>
         <div className={styles['img-wrapper']}>
           <hr className={styles.box} />
           <img src={specialDish} alt="today's special"/>

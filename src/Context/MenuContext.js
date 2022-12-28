@@ -6,7 +6,7 @@ export const MenuContext = React.createContext({});
 export default function MenuContextProvider({children}) {
     const [meals, setMeals] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    const [originalMeals, setOriginalMeals] = useState("");
+    const [originalMeals, setOriginalMeals] = useState([]);
   
     useEffect(() => {
       fetch(" https://www.themealdb.com/api/json/v1/1/filter.php?a=Italian")

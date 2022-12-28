@@ -5,7 +5,7 @@ import Input from '../UI/Input';
 export default function Booking() {
   return (
     <div className={styles['container-Bg']} id={'reservation'}>
-        <div className={`${styles['booking-Wrapper']} animate`}>
+        <div className={`${styles['booking-Wrapper']}`}>
             <div className={styles['schedule-Wrapper']}>
                 <div className={styles['heading-Wrapper']}>
                 <h2 className={styles['top-Heading']}>Time</h2>
