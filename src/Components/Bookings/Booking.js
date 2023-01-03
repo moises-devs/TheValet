@@ -2,10 +2,22 @@ import React from 'react'
 import styles from "./Booking.module.css";
 import SectionCard from '../UI/SectionCard';
 import Input from '../UI/Input';
+import { motion } from 'framer-motion'; 
+
+const cardVariant = {
+  hidden: {
+    opacity:0,
+    y:'50%',
+  },
+  show: {
+    opacity:1,
+    y:0,
+  }
+}
 export default function Booking() {
   return (
     <div className={styles['container-Bg']} id={'reservation'}>
-        <div className={`${styles['booking-Wrapper']}`}>
+        <motion.div variants={cardVariant} initial="hidden" whileInView="show" className={`${styles['booking-Wrapper']}`}>
             <div className={styles['schedule-Wrapper']}>
                 <div className={styles['heading-Wrapper']}>
                 <h2 className={styles['top-Heading']}>Time</h2>
@@ -49,7 +61,7 @@ export default function Booking() {
                     <button className={styles.btn} type={'button'}>Book a Table</button>
                 </form>
             </SectionCard>
-        </div>
+        </motion.div>
     </div>
   )
 }

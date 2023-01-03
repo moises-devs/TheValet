@@ -1,18 +1,15 @@
 *{
   box-sizing:border-box;
+  overflow:visible;
 }
 
 html {
   font-size:62.5%;
-  height:100vh;
-}
-
-.animate {
-  transition: all 200ms;
-}
-.showsec {
-  opacity:1 !important;
-  transform:translate(0) !important;
+  height:-webkit-fill-available;
+  width:100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: stretch;
 }
 
 
@@ -25,8 +22,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size:1.6rem;
-  width: 100%;
-  height:100%;
+  width:100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: stretch;
+  height:-webkit-fill-available;
   font-family: 'Francois One', sans-serif;
   font-family: 'Gayathri', sans-serif;
 

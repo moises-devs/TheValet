@@ -42,11 +42,11 @@ export default function MenuContextProvider({children}) {
               return { ...meal, contains: "vegetarian" };
             }
             return meal;
-          });
+          })
           setMeals(updatedMeals);
           setOriginalMeals(updatedMeals);
           setIsLoading(false);
-        });
+        }).catch(res => console.log(res));
     }, []);
 
   return (

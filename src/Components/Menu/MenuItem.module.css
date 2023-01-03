@@ -11,7 +11,9 @@
 }
 
 .imgwrapper {
+    overflow:hidden;
     width:50%;
+    border-radius:50%;
     
 }
 .contentwrapper {

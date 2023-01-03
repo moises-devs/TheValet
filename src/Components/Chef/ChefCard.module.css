@@ -7,13 +7,15 @@
     margin:2rem 0;
 }
 .img-wrapper {
-    max-width:300px;
+    width:60%;
 }
 .img-wrapper img {
-    height:100%;
-    width:100%;
-    border-radius:50%;
-    border:1rem solid black;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+    border:.5rem solid black;
+    overflow:hidden;
 }
 .name {
     font-size:2rem;
@@ -43,6 +45,9 @@
     .social-item {
         font-size:3.8rem;
     }
+    .img-wrapper {
+        width:35%;
+    }
 }
 @media (min-width:1000px) {
     .name, .description {
@@ -50,5 +55,8 @@
     }
     .social-item {
         font-size:4rem;
+    }
+    .img-wrapper {
+        width:40%;
     }
 }

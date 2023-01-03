@@ -3,10 +3,23 @@ import SectionCard from '../UI/SectionCard'
 import styles from "./DailySpecial.module.css";
 import specialDish from "../../images/Dishes/pexels-photo-64208.jpg";
 import fakePerson from "../../images/Avatar/fakeperson.jpg";
+import { motion } from 'framer-motion'; 
+
+const cardVariant = {
+  hidden: {
+    opacity:0,
+    y:'50%',
+  },
+  show: {
+    opacity:1,
+    y:0,
+  }
+}
+
 export default function DailySpecial() {
   return (
     <SectionCard title={'Daily Special'} subtitle={'Discover'}>
-      <div className={`${styles['section-wrapper']}`}>
+      <motion.div variants={cardVariant} whileInView="show" initial="hidden" className={`${styles['section-wrapper']}`}>
         <div className={styles['img-wrapper']}>
           <hr className={styles.box} />
           <img src={specialDish} alt="today's special"/>
@@ -27,7 +40,7 @@ export default function DailySpecial() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </SectionCard>
   )
 }

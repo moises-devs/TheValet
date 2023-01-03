@@ -27,7 +27,6 @@ export default function Menu() {
       setMeals(originalMeals);
     }
   }
-
   return (
     <section id="menu" className={`${styles.container}`}>
       <h2 className={styles.title}> Menu </h2>

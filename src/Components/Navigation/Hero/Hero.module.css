@@ -26,6 +26,17 @@
     font-weight:500;
     margin: 1rem 0;
 }
+.imgwrapper {
+    height:100px;
+    width:100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.hero-wrapper img {
+
+    max-height:100%;
+    width:100%;
+}
 
 @media (min-width:600px) {
     .title1 {
