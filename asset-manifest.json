@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TheValet/static/css/main.84a7e4e1.css",
-    "main.js": "/TheValet/static/js/main.866bc226.js",
+    "main.css": "/TheValet/static/css/main.2fdaf469.css",
+    "main.js": "/TheValet/static/js/main.718d19df.js",
     "static/media/Hero1.jpg": "/TheValet/static/media/Hero1.afc7e4768187320b5236.jpg",
     "static/media/storyimg1.jpg": "/TheValet/static/media/storyimg1.420d372211f0af4ff061.jpg",
     "static/media/storyimg0.jpg": "/TheValet/static/media/storyimg0.cb4e3b2079a58c05b2da.jpg",
@@ -19,11 +19,11 @@
     "static/media/thomas-1000x697.jpg": "/TheValet/static/media/thomas-1000x697.8efa49da731186d2e646.jpg",
     "static/media/pexels-photo-64208.jpg": "/TheValet/static/media/pexels-photo-64208.ae73a9040f697378272a.jpg",
     "index.html": "/TheValet/index.html",
-    "main.84a7e4e1.css.map": "/TheValet/static/css/main.84a7e4e1.css.map",
-    "main.866bc226.js.map": "/TheValet/static/js/main.866bc226.js.map"
+    "main.2fdaf469.css.map": "/TheValet/static/css/main.2fdaf469.css.map",
+    "main.718d19df.js.map": "/TheValet/static/js/main.718d19df.js.map"
   },
   "entrypoints": [
-    "static/css/main.84a7e4e1.css",
-    "static/js/main.866bc226.js"
+    "static/css/main.2fdaf469.css",
+    "static/js/main.718d19df.js"
   ]
 }
