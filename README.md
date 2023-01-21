@@ -36,7 +36,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-* A Resturant Ap
+* A Resturant App
 * Application works with a free Italian Food API
 * Fully Responsive
 
